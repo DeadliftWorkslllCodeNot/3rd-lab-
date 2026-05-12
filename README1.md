@@ -113,10 +113,10 @@ int main() {
 
 ## Результаты
 
-№ |	Входная строка | Результат | Тип ошибки |
---|----------------|-----------|------------|
+№ |	Входная строка | Результат |
+--|----------------|-----------|
 1 |	()[]{} | All is good | 
-2 |	([)] | | Error: nonconformig bracket |
+2 |	([)] | Error: nonconformig bracket |
 3 |	(()	| Error needs one more bracket |
 4 |	())	| Error: unnecessary bracket  |
 5 |	{[(())]} | All is good |
