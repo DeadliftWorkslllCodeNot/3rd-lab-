@@ -21,10 +21,10 @@ bool proverka(const string& line) {
 	for (int i = 0; i < line.length(); i++) {
 		char c = line[i];
 		if (c == '(' || c == '[' || c == '{') {
-			stack.push(c); //кладем в стек
+			stack.push(c); 
 		}
 		else if (c == ')') {
-			if (stack.empty()) { //если стек пуст
+			if (stack.empty()) { 
 				cout << "Error: unnecessary bracket " << c << endl;
 				return false;
 			}
@@ -32,7 +32,7 @@ bool proverka(const string& line) {
 				cout << "Error: nonconformig bracket " << c << endl;
 				return false;
 			}
-			stack.pop(); //удаление верхнего элемента
+			stack.pop(); 
 		}
 
 		else if (c == ']') {
