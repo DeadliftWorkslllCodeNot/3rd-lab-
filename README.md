@@ -28,7 +28,7 @@ bool proverka(const string& line) {
 				cout << "Error: unnecessary bracket " << c << endl;
 				return false;
 			}
-			if (stack.top() != '(') { //если верхний элемент не (
+			if (stack.top() != '(') { 
 				cout << "Error: nonconformig bracket " << c << endl;
 				return false;
 			}
